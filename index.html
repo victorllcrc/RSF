@@ -7,7 +7,8 @@
     <title>Rocio</title>
     <style>
         body {
-            background-color: #e6adc5; /* Cambia el color de fondo a azul claro */
+            background: url("https://res.cloudinary.com/drjk4tyh6/image/upload/v1700284798/uz92nqt39hyolrgtc7kf.jpg");
+            background-color: #ffb0d1; /* Cambia el color de fondo a azul claro */
             background-size: cover;
             background-repeat: no-repeat;
             font-family: Arial, sans-serif;
@@ -22,7 +23,7 @@
 
         h1 {
             font-size: 36px;
-            color: #723358;
+            color: #e498b9;
         }
 
         .boton-container {
@@ -51,7 +52,7 @@
         }
         .modal-container {
             display: flex;
-            background-color: rgba(0, 0, 0, 0.3);
+            background-color: rgba(0, 0, 0, 0.85);
             align-items: center;
             justify-content: center;
             position: fixed;
@@ -70,9 +71,9 @@
             }
 
             .modal {
-            background-color: #fff;
-            width: 600px;
-            max-width: 100%;
+            background-color: rgba(255, 255, 255, 0.7);
+            width: 300px;
+            max-width: 60%;
             padding: 30px 50px;
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -100,17 +101,17 @@
             }
             .contenedor-iframe {
             background-color: #f0f0f0; /* Cambia el color de fondo a lo que desees */
-            width: 360px; /* Ajusta el ancho a tu preferencia */
-            height: 640px; /* Ajusta la altura a tu preferencia */
+            width: 270px; /* Ajusta el ancho a tu preferencia */
+            height: 480px; /* Ajusta la altura a tu preferencia */
             
             }
             .container{
                 display: grid;
                 place-content: center;
             }
-            .contenedor-iframe iframe {
-            width: 360px; /* Ajusta el ancho a tu preferencia */
-            height: 640px;
+            .contenedor-iframe video {
+            width: 270px; /* Ajusta el ancho a tu preferencia */
+            height: 480px;
             position: relative;
             top: 0;
             left: 0;
@@ -121,12 +122,12 @@
     
 </head>
 <body>
-    <h1>¿Quiere ser mi loquita <3?</h1>
+    <h1>¿Rocio, quieres ser mi novia?</h1>
     <div class="boton-container">
         <input type="button" class="boton boton-si" id="open" value="Si" />
         <input type="button" id="btnNo" class="boton boton-no" onmouseover="mueveElBoton()" value="No" />
     </div>
-    <img src="https://cdn-icons-png.flaticon.com/256/7173/7173074.png" alt="Icono No" width="200">
+    <img src="https://res.cloudinary.com/drjk4tyh6/image/upload/v1700286335/wshsi0me41cqac9qzm8p.png" alt="Icono No" width="200">
     <div id="modal_container" class="modal-container">
         <div class="modal">
           <h1>Eliana del Rocio</h1>
@@ -136,7 +137,9 @@
           </p>
           <div class="container">
               <div class="contenedor-iframe">
-                <iframe src="https://drive.google.com/file/d/1mVVNYnptQ8LTdNFSm9tB1IV4Pl8FW25R/preview"  allow="autoplay" frameborder="0"></iframe>
+                <video autoplay controls>
+                    <source src="https://res.cloudinary.com/drjk4tyh6/video/upload/v1700282877/aodjvk2pcknh50iiakkp.mp4" type="video/mp4">
+                </video>
               </div>
           </div>
           <button id="close">Cerrar</button>
